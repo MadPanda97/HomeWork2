@@ -2,29 +2,75 @@ package main
 
 import (
 	"fmt"
+	_ "fmt"
 	_ "math"
 )
 
 func main() {
-	var A = 5
-	var B = 4.5
-	S := A + int(B)
-	fmt.Println(S)
+	if A := 4; A == 1 {
+		fmt.Println("one")
+	} else if A == 2 {
+		fmt.Println("two")
+	} else if A == 3 {
+		fmt.Println("three")
+	} else if A == 4 {
+		fmt.Println("four")
+	} else if A == 5 {
+		fmt.Println("five")
+	} else if A == 6 {
+		fmt.Println("six")
+	} else if A == 7 {
+		fmt.Println("seven")
+	} else if A == 8 {
+		fmt.Println("eight")
+	} else if A == 9 {
+		fmt.Println("nine")
+	} else if A == 10 {
+		fmt.Println("ten")
+	} else if A == 0 {
+		fmt.Println("zero")
+	}
 
-	var V uint = 14
-	var pisyun byte = 25
-	GG := V * uint(pisyun)
-	fmt.Println(GG)
+	W1 := 5
+	L1 := 10
+	W2 := 6
+	L2 := 9
 
-	H := 13
-	J := 9
-	HJ := H & J
-	/* 13 =1101
-	9=1001
-	13&9 = 1001=9
-	*/
-	fmt.Println(HJ)
-	SPR := H | J
-	fmt.Println(SPR)
+	if W1 > W2 && L1 > L2 {
+		println("Вмещает")
+	} else {
+		println("Не вмещает")
+	}
+
+	pow := -5
+	if pow > 0 {
+		var N = 10
+		var result = N
+		for P := 0; P < pow-1; P++ {
+			result = result * N
+
+		}
+		{
+			println(result)
+		}
+	} else if pow == 0 {
+		var N = 1
+		var result = N
+		for P := 0; P < pow-1; P++ {
+			result = result * N
+		}
+		{
+			println(result)
+		}
+	} else if pow < 0 {
+		var N float64 = 10
+		var result float64 = N
+		for P := 0; P > pow-1; P-- {
+			result = result / N
+		}
+		{
+			println(result)
+		}
+	}
 
 }
